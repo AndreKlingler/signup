@@ -24,18 +24,20 @@
   src: url("./src/fonts/Roboto.ttf"), type ("truetype");
 }
 
-
 h1 {
   font-size: 5.61rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h2 {
   font-size: 4.209rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h3 {
   font-size: 3.157rem;
   font-family: Montserrat;
+  font-weight: 400;
 }
 h4 {
   font-size: 2.369rem;
@@ -62,8 +64,31 @@ body {
   display: flex;
   height: 100vh;
   .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 100%;
     border: 3px solid red;
+  }
+  .left {
+    gap: 4rem;
+    background-color: var(--color2);
+    background-image: url("./src/public/Splash1.png");
+    background-position: center 6.25rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .text-container {
+      text-align: center;
+      h6 {
+        font-weight: 200;
+      }
+
+      span {
+        color: var(--color5);
+      }
+    }
   }
 }
 
