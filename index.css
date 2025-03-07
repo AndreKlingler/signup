@@ -60,7 +60,8 @@ small {
   font-family: Roboto;
 }
 
-.btn-primary, .btn-secendary{
+.btn-primary,
+.btn-secendary {
   padding: 1rem 2rem;
   border-radius: 0.625rem;
   color: var(--realwhite);
@@ -68,12 +69,12 @@ small {
 }
 
 .btn-primary {
- background-color: var(--color5);
+  background-color: var(--color5);
 }
 
 .btn-secendary {
   background-color: var(--color1);
-  border: .0625rem solid var(--color5);
+  border: 0.0625rem solid var(--color5);
 }
 
 body {
@@ -87,9 +88,9 @@ body {
     min-width: 50%;
   }
   .left {
-    
+    display: none;
     color: var(--color1);
-    gap: 4rem;
+    gap: 8rem;
     background-color: var(--color2);
     background-image: url("./src/public/Splash1.png");
     background-position: center 10rem;
@@ -97,7 +98,10 @@ body {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    box-shadow: 4px -3px 12px 0 rgba(0, 0, 0, 0.2), 16px -14px 21px 0 rgba(0, 0, 0, 0.18), 37px -31px 29px 0 rgba(0, 0, 0, 0.1), 66px -56px 34px 0 rgba(0, 0, 0, 0.03), 102px -87px 38px 0 rgba(0, 0, 0, 0);
+    box-shadow: 4px -3px 12px 0 rgba(0, 0, 0, 0.2),
+      16px -14px 21px 0 rgba(0, 0, 0, 0.18),
+      37px -31px 29px 0 rgba(0, 0, 0, 0.1),
+      66px -56px 34px 0 rgba(0, 0, 0, 0.03), 102px -87px 38px 0 rgba(0, 0, 0, 0);
 
     .text-container {
       text-align: center;
@@ -107,14 +111,27 @@ body {
 
       span {
         color: var(--color5);
+        background-color: var(--color2);
       }
     }
   }
 
   .right {
+    width: 100%;
+    padding: 4rem 2rem;
     background-color: var(--color1);
-    img {
-      height: 4.25rem;
+    .right-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      h3{
+        color: var(--color2);
+      }
+      img {
+        width: calc(7.3113rem * 0.7);
+        height: calc(6.25rem * 0.7);
+      }
     }
     form {
       display: flex;
@@ -134,7 +151,7 @@ body {
         flex-direction: column;
         gap: 3rem;
 
-        small{
+        small {
           color: var(--color2);
           text-align: center;
         }
@@ -221,6 +238,20 @@ body {
 @media (min-width: 992px) {
   html {
     font-size: 1.125rem;
+  }
+  body {
+    .left {
+      display: flex;
+    }
+    .right {
+      width: auto;
+
+      .right-header{
+        h3{
+          display: none;
+        }
+      }
+    }
   }
 }
 
