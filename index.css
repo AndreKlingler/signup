@@ -66,15 +66,30 @@ small {
   border-radius: 0.625rem;
   color: var(--realwhite);
   border: none;
+  cursor: pointer;
+  transition: background-color 0.4s;
+  font-size: 1rem;
+
+  &:active{
+    background-color: var(--color1);
+  }
 }
 
 .btn-primary {
   background-color: var(--color5);
+  &:hover{
+    background-color: #b16418;
+  }
 }
 
 .btn-secendary {
   background-color: var(--color1);
   border: 0.0625rem solid var(--color5);
+  text-align: center;
+  text-decoration: none;
+  &:hover{
+    background-color: #b16418;
+  }
 }
 
 body {
