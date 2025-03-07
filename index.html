@@ -18,26 +18,70 @@
     <div class="right cont">
       <img src="./src/public/Logo.png" alt="Logo" />
       <form class="container" method="post" action="#">
-        <div class="input-container">
-          <label for="username">Username</label>
-          <input type="text" name="username" id="username"
-          placeholder="Username" />
-        </div>
-        
-        <div class="input-container">
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email"
-          placeholder="your@email.com" />
-        </div>
-        <div class="input-container">
-          <label for="password">Password</label>
-          <input type="password" name="password" id="password"
-          placeholder="Password" />
-        </div>
-        <div class="input-container">
-          <label for="confirm-password">Confirm password</label>
-          <input type="confirm-password" name="confirm" id="confirm-password"
-          placeholder="Confirm password" />
+        <div class="inputs-container">
+          <div class="text-inputs">
+            <div class="input-container">
+              <label for="username">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Username"
+              />
+            </div>
+
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="your@email.com"
+              />
+            </div>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </div>
+            <div class="input-container">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                type="confirm-password"
+                name="confirm"
+                id="confirm-password"
+                placeholder="Confirm password"
+              />
+            </div>
+          </div>
+          <div class="checkbox-inputs">
+            <div class="input-container">
+              <input type="checkbox" name="tos" id="tos" />
+              <label for="tos">
+                <small>
+                  <span>*</span>
+                  Terms of service
+                </small>
+                </label>
+            </div>
+            <div class="input-container">
+              <input type="checkbox" name="newsletter" id="newsletter" />
+              <label for="newsletter">
+                <small>
+                  I want the newsletter
+                </small>
+                </label>
+            </div>
+          </div>
+          <div class="button-inputs">
+            <input class="btn-primary" type="submit" value="Sign up">
+            <input class="btn-secendary" type="button" value="Sign in">
+          </div>
+          <small>Your data is encrypted and not passed on third parties</small>
         </div>
       </form>
     </div>
