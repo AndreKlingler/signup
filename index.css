@@ -69,9 +69,9 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    border: 3px solid red;
   }
   .left {
+    color: var(--color1);
     gap: 4rem;
     background-color: var(--color2);
     background-image: url("./src/public/Splash1.png");
@@ -90,6 +90,45 @@ body {
       }
     }
   }
+
+  .right {
+    background-color: var(--color1);
+    img {
+      height: 6.25rem;
+    }
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 4rem 2rem;
+      label {
+        display: none;
+      }
+      .input-container {
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        &::before {
+          content: "*";
+          color: var(--color4);
+          position: absolute;
+          left: 1.5625rem;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 0.8rem;
+        }
+
+        input {
+          width: 100%;
+          padding: 1rem 2rem;
+          border-radius: 0.625rem;
+          background-color: var(--color2);
+        }
+      }
+    }
+  }
 }
 
 .container {
@@ -98,7 +137,6 @@ body {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  border: 3px solid red;
 }
 
 @media (min-width: 576px) {
